@@ -1,0 +1,61 @@
+.technologies {
+    padding-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        justify-content: center;
+        gap: 13px;
+        padding-top: 60px;
+        &-item {
+            padding: 30px 30px 25px 30px;
+            border: 1px solid black;
+        }
+        &-title {
+            padding-top: 20px;
+        }
+        &-text {
+            padding-top: 15px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+    }
+    &__progress {
+        padding-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        gap: 30px 45px;
+        justify-content: space-between;
+        &-title {
+            position: relative;
+            padding: 8px 0 0 13px;
+            font-weight: 700;
+            @include before_circle;
+            &:before {
+                top: 0;
+            }
+        }
+        &-percent {
+            font-size: 14px;
+            font-weight: 500;
+            padding-top: 8px;
+        }
+        &-wrapper {
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-scale {
+            margin-top: 27px;
+            width: 100%;
+            height: 14px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-rate {
+            height: 100%;
+            background-color: $main-color;
+            border-radius: 4px;
+        }
+    }
+}
